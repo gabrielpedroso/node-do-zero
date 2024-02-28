@@ -1,0 +1,27 @@
+POST http://localhost:3333/videos
+Content-Type: application/json
+
+{
+    "title": "Primeiro Video salvado no porstgres",
+    "description": "Esse é o video 01",
+    "duration": 200
+}
+
+###
+
+GET http://localhost:3333/videos
+
+###
+
+PUT http://localhost:3333/videos/2c8bd4fd-1f0f-4654-a625-b48c3590fc19
+Content-Type: application/json
+
+{
+    "title": "Video Atualizado",
+    "description": "Esse é o video 01, atualizado",
+    "duration": 220
+}
+
+###
+
+DELETE http://localhost:3333/videos/2c8bd4fd-1f0f-4654-a625-b48c3590fc19
